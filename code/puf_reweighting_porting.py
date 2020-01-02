@@ -10,8 +10,8 @@ import numpy as np
 import pandas as pd
 import ipopt
 
-#%% Globals (change as needed)
-dir_proj = 'C:/Git/taxdata_weighting/task3_python/'
+#%% Globals 
+dir_proj = 'C:/Git/taxdata_weighting_python/' # (change as needed)
 
 includes_dir   = dir_proj + 'code/'
 input_data_dir = dir_proj + 'input_files/'
@@ -54,7 +54,8 @@ pufbase_state = pufbase_state.drop(columns = ['MARS', 'weight_state'])
 # better way to implement pivot_wider in R?
 
 pufbase_state.columns
-# pufbase_state.to_csv(interim_results_dir + "pufbase_state.csv") # TODO: save the object instead
+
+pufbase_state.to_csv(interim_results_dir + "pufbase_state.csv") # TODO: save the object instead
 # pufbase_state = pd.read_csv(interim_results_dir + "pufbase_state.csv")
 
 
@@ -340,7 +341,7 @@ def runstub(AGI_STUB, tolerances, nzcc, pufbase_state, log_dir, interim_results_
 
     nlp_puf.addOption('print_level', 0)
     nlp_puf.addOption('file_print_level', 5)
-    # nlp_puf.addOption('linear_solver', 'ma27')
+    # nlp_puf.addOption('linear_solver', 'ma27') # cyipopt uses MUMPS solver as its default solver
     nlp_puf.addOption('max_iter', 100)
     nlp_puf.addOption('mu_strategy', 'adaptive')
     nlp_puf.addOption('output_file', logfile_name)
@@ -384,24 +385,6 @@ pufbase_state['weight_state'].sum()
 (pufbase_state['weight_state'] * pufbase_state['E00200']).sum() / 1e9
 # $ 550.8483 billion is the number that I (Yin) get, which is very close to the value given by the R code (550.8716)
 # and within 0.2% of the Historical Table 2 target
-
-
-
-
-
-
-
-# df_eval_c = inputs['constraint_coefficients_sparse'].loc[:, ['nzcc', 'i', 'j']]
-# df_eval_c['x_eval'] = np.take(x, inputs['constraint_coefficients_sparse'].j)
-# df_eval_c['nzcc_x'] = df_eval_c['nzcc'] * df_eval_c['x_eval']
-# c_vals_out = df_eval_c.groupby('i')['nzcc_x'].agg('sum')
-#
-#
-# df = pd.DataFrame({'const' : constraints.to_numpy(), 'lb' : clb.to_numpy(), 'result' : c_vals_out.to_numpy(), 'ub' : cub.to_numpy(), "tol" : tol.to_numpy()})
-# df['dif'] = df.result / df.const - 1
-# df['if_tol'] = abs(df.dif) / df.tol
-# df
-
 
 
 

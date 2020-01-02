@@ -1,0 +1,1 @@
+Log files from Ipopt solver

@@ -1,12 +1,9 @@
 # -*- coding: utf-8 -*-
 """
-
-# Constructing single-state microdata tax file for New York
-# Porting the R code into Python
+Created on Tue Dec 31 09:03:28 2019
 
 @author: yimen
 """
-
 #%%
 import numpy as np
 #import scipy.sparse as sps
@@ -14,7 +11,7 @@ import pandas as pd
 import ipopt
 
 #%% Globals (change as needed)
-dir_proj = 'C:/Git/taxdata_weighting_python/'
+dir_proj = 'C:/Git/taxdata_weighting/task3_python/'
 
 includes_dir   = dir_proj + 'code/'
 input_data_dir = dir_proj + 'input_files/'
@@ -57,10 +54,13 @@ pufbase_state = pufbase_state.drop(columns = ['MARS', 'weight_state'])
 # better way to implement pivot_wider in R?
 
 pufbase_state.columns
-pufbase_state.to_csv(interim_results_dir + "pufbase_state.csv") # TODO: save the object instead
+# pufbase_state.to_csv(interim_results_dir + "pufbase_state.csv") # TODO: save the object instead
+# pufbase_state = pd.read_csv(interim_results_dir + "pufbase_state.csv")
 
 
 #%% Prepare nonzero constraint coefficients
+
+
 
 # make a long sparse file that has the initial weight and the variable value for each numeric variable
 # we will make constraint coefficients from this
@@ -143,68 +143,10 @@ tolerances[tolerances.AGI_STUB == 2]
 
 
 
-#%% run the optimization on one or more agi stubs
 
-stub = 1
+#%% Define the class for ipopt problem objects
 
-constraint_value = 1000  # each constraint will be this number when scaled
-constraints_unscaled = tolerances[tolerances.AGI_STUB == stub].target
-constraint_scales = np.where(constraints_unscaled == 0, 1, abs(constraints_unscaled) / constraint_value)
-constraints = constraints_unscaled / constraint_scales
-
-constraints
-
-# create nzcc for the stub, and on each record create i to index constraints and j to index variables (the x elements)
-
-nzcc_stub = nzcc[nzcc.AGI_STUB == stub].sort_values(by = ['constraint_name', 'RECID'])
-
-# NOTE!!: create i and j, each of which will be consecutive integersm where
-    #   i gives the index for constraints
-    #   j gives the index for the RECID (for the variables)
-    #   TODO: There should be better ways to do this in python (liek grouop_indeces in R)
-    #   Note that the indeces start from 0 here in python. (start from 1 in R) 
-nzcc_stub
-nzcc_stub['i'] = nzcc_stub.constraint_name
-nzcc_stub['j'] = nzcc_stub.RECID
-nzcc_stub.set_index(['i', 'j'], inplace = True)
-
-rename_dic1 = dict(zip(nzcc_stub.constraint_name.unique(), list(range(len(nzcc_stub.constraint_name.unique())))))
-rename_dic2 = dict(zip(np.sort(nzcc_stub.RECID.unique()), list(range(len(nzcc_stub.RECID.unique())))))
-
-nzcc_stub.rename(index = rename_dic1, level = 'i', inplace = True)
-nzcc_stub.rename(index = rename_dic2, level = 'j', inplace = True)
-nzcc_stub.reset_index(inplace = True)
-# nzcc_stub[nzcc_stub.i == 1].loc[:, ['i', 'j', 'constraint_name', 'RECID']]
-
-nzcc_stub['nzcc_unscaled'] = nzcc_stub.nzcc
-nzcc_stub['nzcc'] = nzcc_stub.nzcc_unscaled / np.take(constraint_scales, nzcc_stub.i)
-
-
-# Inputs
-
-inputs = {}
-inputs['p'] = 2
-inputs['wt'] = pufbase_state[pufbase_state.AGI_STUB == stub].sort_values(by = 'RECID').weight_initial # note this is a pd.Series
-inputs['RECID'] = pufbase_state[pufbase_state.AGI_STUB == stub].sort_values(by = 'RECID').RECID
-inputs['constraint_coefficients_sparse'] = nzcc_stub
-inputs['n_variables'] = len(inputs['wt'])
-inputs['n_constraints'] = len(constraints)
-inputs['objscale'] = 1e6 # scaling constant used in the various objective function functions
-inputs['constraint_scales'] = constraint_scales
-
-xlb = np.repeat(0,   inputs['n_variables']) # arbitrary
-xub = np.repeat(100, inputs['n_variables']) # arbitrary
-x0  = np.repeat(1,   inputs['n_variables'])
-
-
-tol = tolerances[tolerances.AGI_STUB == stub].tol_default
-
-clb = constraints - abs(constraints) * tol
-cub = constraints + abs(constraints) * tol
-
-
-
-class puf_obj:
+class puf_obj(object):
     def __init__(self, inputs):
         self.inputs = inputs
  
@@ -286,11 +228,11 @@ class puf_obj:
         return c_vals
         
     
-    def jacobian(self):    
+    def jacobian(self, x):    
         # the Jacobian is the matrix of first partial derivatives of constraints (these derivatives may be constants)
         # this function evaluates the Jacobian at point x
         
-        return inputs['constraint_coefficients_sparse'].nzcc    
+        return self.inputs['constraint_coefficients_sparse'].nzcc
         
      
     def jacobianstructure(self):
@@ -298,49 +240,168 @@ class puf_obj:
         js_col = self.inputs['constraint_coefficients_sparse'].j
         js_row = self.inputs['constraint_coefficients_sparse'].i
        
-        return (js_col, js_row)
+        return js_row, js_col
         #return (js_row, js_col)
 
-#    def intermediate(
-#            self,
-#            alg_mod,
-#            iter_count,
-#            obj_value,
-#            inf_pr,
-#            inf_du,
-#            mu,
-#            d_norm,
-#            regularization_size,
-#            alpha_du,
-#            alpha_pr,
-#            ls_trials
-#            ):
-#        
-#        # print("Objective value at iteration %d is - %g" % (iter_count, obj_value))
-#          print(iter_count)
+    def intermediate(
+            self,
+            alg_mod,
+            iter_count,
+            obj_value,
+            inf_pr,
+            inf_du,
+            mu,
+            d_norm,
+            regularization_size,
+            alpha_du,
+            alpha_pr,
+            ls_trials
+            ):
+        pass
+        # print("Objective value at iteration %d is - %g" % (iter_count, obj_value))
 
 
-nlp_puf = ipopt.problem(
-        n = len(x0),
-        m = len(clb),
-        problem_obj = puf_obj(inputs),
-        lb=xlb,
-        ub=xub,
-        cl=clb,
-        cu=cub
-        )
+
+#%% Define the function for running the optimization on a single AGI stub
+
+def runstub(AGI_STUB, tolerances, nzcc, pufbase_state, log_dir, interim_results_dir):
+
+    stub = AGI_STUB
+
+    constraint_value = 1000  # each constraint will be this number when scaled
+    constraints_unscaled = tolerances[tolerances.AGI_STUB == stub].target
+    constraint_scales = np.where(constraints_unscaled == 0, 1, abs(constraints_unscaled) / constraint_value)
+    constraints = constraints_unscaled / constraint_scales
+    # constraints
+
+    # create nzcc for the stub, and on each record create i to index constraints and j to index variables (the x elements)
+
+    nzcc_stub = nzcc[nzcc.AGI_STUB == stub].sort_values(by = ['constraint_name', 'RECID'])
+
+    # NOTE!!: create i and j, each of which will be consecutive integersm where
+        #   i gives the index for constraints
+        #   j gives the index for the RECID (for the variables)
+        #   TODO: There should be better ways to do this in python (liek grouop_indeces in R)
+        #   Note that the indeces start from 0 here in python. (start from 1 in R)
+    #nzcc_stub
+    nzcc_stub['i'] = nzcc_stub.constraint_name
+    nzcc_stub['j'] = nzcc_stub.RECID
+    nzcc_stub.set_index(['i', 'j'], inplace = True)
+
+    rename_dic1 = dict(zip(nzcc_stub.constraint_name.unique(), list(range(len(nzcc_stub.constraint_name.unique())))))
+    rename_dic2 = dict(zip(np.sort(nzcc_stub.RECID.unique()), list(range(len(nzcc_stub.RECID.unique())))))
+
+    nzcc_stub.rename(index = rename_dic1, level = 'i', inplace = True)
+    nzcc_stub.rename(index = rename_dic2, level = 'j', inplace = True)
+    nzcc_stub.reset_index(inplace = True)
+    # nzcc_stub[nzcc_stub.i == 1].loc[:, ['i', 'j', 'constraint_name', 'RECID']]
+
+    nzcc_stub['nzcc_unscaled'] = nzcc_stub.nzcc
+    nzcc_stub['nzcc'] = nzcc_stub.nzcc_unscaled / np.take(constraint_scales, nzcc_stub.i)
 
 
-logfile_name = log_dir + "stub_" + str(stub) + ".out"
+    # Inputs
 
-nlp_puf.addOption('print_level', 0)
-nlp_puf.addOption('file_print_level', 5)
-# nlp_puf.addOption('linear_solver', 'ma27')
-nlp_puf.addOption('max_iter', 100)
-nlp_puf.addOption('output_file', logfile_name)
+    inputs = {}
+    inputs['p'] = 2
+    inputs['wt'] = pufbase_state[pufbase_state.AGI_STUB == stub].sort_values(by = 'RECID').weight_initial # note this is a pd.Series
+    inputs['RECID'] = pufbase_state[pufbase_state.AGI_STUB == stub].sort_values(by = 'RECID').RECID
+    inputs['constraint_coefficients_sparse'] = nzcc_stub
+    inputs['n_variables'] = len(inputs['wt'])
+    inputs['n_constraints'] = len(constraints)
+    inputs['objscale'] = 1e6 # scaling constant used in the various objective function functions
+    inputs['constraint_scales'] = constraint_scales
+
+    xlb = np.repeat(0,   inputs['n_variables']) # arbitrary
+    xub = np.repeat(100, inputs['n_variables']) # arbitrary
+    x0  = np.repeat(1,   inputs['n_variables'])
+
+    tol = tolerances[tolerances.AGI_STUB == stub].tol_default
+
+    clb = constraints - abs(constraints) * tol
+    cub = constraints + abs(constraints) * tol
+
+    clb.fillna(0, inplace = True)
+    cub.fillna(0, inplace = True)
 
 
-x_stub, info = nlp_puf.solve(x0)
+    nlp_puf = ipopt.problem(
+            n=len(x0),
+            m=len(clb),
+            problem_obj=puf_obj(inputs),
+            lb=xlb,
+            ub=xub,
+            cl=clb,
+            cu=cub
+            )
+
+
+    logfile_name = log_dir + "stub_" + str(stub) + ".out"
+
+    nlp_puf.addOption('print_level', 0)
+    nlp_puf.addOption('file_print_level', 5)
+    # nlp_puf.addOption('linear_solver', 'ma27')
+    nlp_puf.addOption('max_iter', 100)
+    nlp_puf.addOption('mu_strategy', 'adaptive')
+    nlp_puf.addOption('output_file', logfile_name)
+
+
+    x, info = nlp_puf.solve(x0)
+    print(info['status_msg'])
+
+    return pd.DataFrame({'AGI_STUB' : stub, 'RECID': inputs['RECID'], 'wt_int' : inputs['wt'], 'x' : x})
+
+# Test the function
+# xdf1 = runstub(1, tolerances, nzcc, pufbase_state, log_dir, interim_results_dir)
+
+#%% run the optimization on one or more agi stubs
+
+stubs = np.sort(pufbase_state.AGI_STUB.unique())
+
+x_list = list()
+for stub in stubs:
+    x_list.append(runstub(stub, tolerances, nzcc, pufbase_state, log_dir, interim_results_dir))
+
+xdf = pd.concat(x_list)
+
+xdf
+xdf.AGI_STUB.value_counts()
+
+xdf.to_csv(outfiles_dir + "x_state.csv")
+
+
+#%% Create the final file
+
+pufbase_state = pd.read_csv(interim_results_dir + "pufbase_state.csv")
+xdf = pd.read_csv(outfiles_dir + "x_state.csv")
+
+pufbase_state = pufbase_state.merge(xdf[['RECID', 'x']], how = 'left', on = 'RECID')
+pufbase_state['weight_state'] = pufbase_state['weight_initial'] * pufbase_state['x']
+
+pufbase_state['weight_initial'].sum()
+pufbase_state['weight_state'].sum()
+
+(pufbase_state['weight_state'] * pufbase_state['E00200']).sum() / 1e9
+# $ 550.8483 billion is the number that I (Yin) get, which is very close to the value given by the R code (550.8716)
+# and within 0.2% of the Historical Table 2 target
+
+
+
+
+
+
+
+# df_eval_c = inputs['constraint_coefficients_sparse'].loc[:, ['nzcc', 'i', 'j']]
+# df_eval_c['x_eval'] = np.take(x, inputs['constraint_coefficients_sparse'].j)
+# df_eval_c['nzcc_x'] = df_eval_c['nzcc'] * df_eval_c['x_eval']
+# c_vals_out = df_eval_c.groupby('i')['nzcc_x'].agg('sum')
+#
+#
+# df = pd.DataFrame({'const' : constraints.to_numpy(), 'lb' : clb.to_numpy(), 'result' : c_vals_out.to_numpy(), 'ub' : cub.to_numpy(), "tol" : tol.to_numpy()})
+# df['dif'] = df.result / df.const - 1
+# df['if_tol'] = abs(df.dif) / df.tol
+# df
+
 
 
 

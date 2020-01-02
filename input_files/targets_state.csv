@@ -1,0 +1,531 @@
+constraint_name,constraint_type,constraint_base_name,puf_link,year,stabbr,AGI_STUB,table_desc,target,target_num
+A00100,amount,00100,c00100,2017,NY,1,Adjusted gross income (AGI),-23906390000,19876
+A00200,amount,00200,E00200,2017,NY,1,Salaries and wages amount,1221150000,19877
+A00300,amount,00300,E00300,2017,NY,1,Taxable interest amount,822159000,19878
+A00600,amount,00600,E00600,2017,NY,1,Ordinary dividends amount,654183000,19879
+A00650,amount,00650,E00650,2017,NY,1,Qualified dividends amount,437277000,19880
+A00700,amount,00700,E00700,2017,NY,1,State and local income tax refunds amount,44863000,19881
+A00900,amount,00900,E00900,2017,NY,1,Business or professional net income (less loss) amount [Schedule C],-568460000,19882
+A01400,amount,01400,E01400,2017,NY,1,Taxable individual retirement arrangements distributions amount,169119000,19883
+A01700,amount,01700,E01700,2017,NY,1,Taxable pensions and annuities amount,181261000,19884
+A02300,amount,02300,E02300,2017,NY,1,Unemployment compensation amount,3800000,19885
+A03150,amount,03150,E03150,2017,NY,1,IRA payments amount,3607000,19886
+A03210,amount,03210,E03210,2017,NY,1,Student loan interest deduction amount,6606000,19887
+A03220,amount,03220,E03220,2017,NY,1,Educator expenses amount,87000,19888
+A03230,amount,03230,E03230,2017,NY,1,Tuition and fees deduction amount,18168000,19889
+A03240,amount,03240,E03240,2017,NY,1,Domestic production activities deduction amount,35213000,19890
+A03270,amount,03270,E03270,2017,NY,1,Self-employment health insurance deduction amount,39316000,19891
+A03300,amount,03300,E03300,2017,NY,1,Self-employment retirement plans amount,7728000,19892
+A05800,amount,05800,c05800,2017,NY,1,Income tax before credits amount,30967000,19893
+A07240,amount,07240,E07240,2017,NY,1,Retirement savings contribution credit amount,44000,19894
+A07260,amount,07260,E07260,2017,NY,1,Residential energy tax credit amount,0,19895
+A07300,amount,07300,E07300,2017,NY,1,Foreign tax credit amount,2000,19896
+A09600,amount,09600,c09600,2017,NY,1,Alternative minimum tax amount,30740000,19897
+A18500,amount,18500,E18500,2017,NY,1,Real estate taxes amount,0,19898
+A26270,amount,26270,E26270,2017,NY,1,Partnership/S-corp net income (less loss) amount,-7077144000,19899
+MARS1,n_returns,NA,MARS1,2017,NY,1,Number of single returns,72990,19900
+MARS2,n_returns,NA,MARS2,2017,NY,1,Number of joint returns,29780,19901
+MARS3,n_returns,NA,MARS3,2017,NY,1,Number of married-separate returns,4330,19902
+MARS4,n_returns,NA,MARS4,2017,NY,1,Number of head of household returns,5810,19903
+N00100,n_nonzero,00100,c00100,2017,NY,1,Number of returns with adjusted gross income (AGI),89360,19904
+N00200,n_nonzero,00200,E00200,2017,NY,1,Number of returns with salaries and wages,28950,19905
+N00300,n_nonzero,00300,E00300,2017,NY,1,Number of returns with taxable interest,43320,19906
+N00600,n_nonzero,00600,E00600,2017,NY,1,Number of returns with ordinary dividends,31570,19907
+N00650,n_nonzero,00650,E00650,2017,NY,1,Number of returns with qualified dividends,28860,19908
+N00700,n_nonzero,00700,E00700,2017,NY,1,Number of returns with state and local income tax refunds,4010,19909
+N00900,n_nonzero,00900,E00900,2017,NY,1,Number of returns with business or professional net income (less loss) [Schedule C],33830,19910
+N01400,n_nonzero,01400,E01400,2017,NY,1,Number of returns with taxable individual retirement arrangements distributions,8540,19911
+N01700,n_nonzero,01700,E01700,2017,NY,1,Number of returns with taxable pensions and annuities,12670,19912
+N02300,n_nonzero,02300,E02300,2017,NY,1,Number of returns with unemployment compensation,640,19913
+N03150,n_nonzero,03150,E03150,2017,NY,1,Number of returns with IRA payments,670,19914
+N03210,n_nonzero,03210,E03210,2017,NY,1,Number of returns with student loan interest deduction,5290,19915
+N03220,n_nonzero,03220,E03220,2017,NY,1,Number of returns with educator expenses,370,19916
+N03230,n_nonzero,03230,E03230,2017,NY,1,Number of returns with tuition and fees deduction,4980,19917
+N03240,n_nonzero,03240,E03240,2017,NY,1,Returns with domestic production activities deduction,730,19918
+N03270,n_nonzero,03270,E03270,2017,NY,1,Number of returns with self-employment health insurance deduction,4710,19919
+N03300,n_nonzero,03300,E03300,2017,NY,1,Number of returns with self-employment retirement plans,290,19920
+N05800,n_nonzero,05800,c05800,2017,NY,1,Number of returns with income tax before credits,910,19921
+N07240,n_nonzero,07240,E07240,2017,NY,1,Number of returns with retirement savings contribution credit,50,19922
+N07260,n_nonzero,07260,E07260,2017,NY,1,Number of returns with residential energy tax credit,0,19923
+N07300,n_nonzero,07300,E07300,2017,NY,1,Number of returns with foreign tax credit,30,19924
+N09600,n_nonzero,09600,c09600,2017,NY,1,Number of returns with alternative minimum tax,530,19925
+N18500,n_nonzero,18500,E18500,2017,NY,1,Number of returns with real estate taxes,0,19926
+N2,n_exempt,NA,XTOT,2017,NY,1,Number of exemptions,165350,19927
+N26270,n_nonzero,26270,E26270,2017,NY,1,Number of returns with partnership/S-corp net income (less loss),26850,19928
+A00100,amount,00100,c00100,2017,NY,2,Adjusted gross income (AGI),6998061000,19929
+A00200,amount,00200,E00200,2017,NY,2,Salaries and wages amount,4950724000,19930
+A00300,amount,00300,E00300,2017,NY,2,Taxable interest amount,86258000,19931
+A00600,amount,00600,E00600,2017,NY,2,Ordinary dividends amount,173552000,19932
+A00650,amount,00650,E00650,2017,NY,2,Qualified dividends amount,115476000,19933
+A00700,amount,00700,E00700,2017,NY,2,State and local income tax refunds amount,8985000,19934
+A00900,amount,00900,E00900,2017,NY,2,Business or professional net income (less loss) amount [Schedule C],1416275000,19935
+A01400,amount,01400,E01400,2017,NY,2,Taxable individual retirement arrangements distributions amount,197385000,19936
+A01700,amount,01700,E01700,2017,NY,2,Taxable pensions and annuities amount,541601000,19937
+A02300,amount,02300,E02300,2017,NY,2,Unemployment compensation amount,48604000,19938
+A03150,amount,03150,E03150,2017,NY,2,IRA payments amount,9692000,19939
+A03210,amount,03210,E03210,2017,NY,2,Student loan interest deduction amount,23787000,19940
+A03220,amount,03220,E03220,2017,NY,2,Educator expenses amount,453000,19941
+A03230,amount,03230,E03230,2017,NY,2,Tuition and fees deduction amount,47749000,19942
+A03240,amount,03240,E03240,2017,NY,2,Domestic production activities deduction amount,6213000,19943
+A03270,amount,03270,E03270,2017,NY,2,Self-employment health insurance deduction amount,25837000,19944
+A03300,amount,03300,E03300,2017,NY,2,Self-employment retirement plans amount,2699000,19945
+A05800,amount,05800,c05800,2017,NY,2,Income tax before credits amount,25693000,19946
+A07240,amount,07240,E07240,2017,NY,2,Retirement savings contribution credit amount,20000,19947
+A07260,amount,07260,E07260,2017,NY,2,Residential energy tax credit amount,6000,19948
+A07300,amount,07300,E07300,2017,NY,2,Foreign tax credit amount,346000,19949
+A09600,amount,09600,c09600,2017,NY,2,Alternative minimum tax amount,233000,19950
+A18500,amount,18500,E18500,2017,NY,2,Real estate taxes amount,213791000,19951
+A26270,amount,26270,E26270,2017,NY,2,Partnership/S-corp net income (less loss) amount,-48993000,19952
+MARS1,n_returns,NA,MARS1,2017,NY,2,Number of single returns,1115810,19953
+MARS2,n_returns,NA,MARS2,2017,NY,2,Number of joint returns,99170,19954
+MARS3,n_returns,NA,MARS3,2017,NY,2,Number of married-separate returns,18640,19955
+MARS4,n_returns,NA,MARS4,2017,NY,2,Number of head of household returns,112170,19956
+N00100,n_nonzero,00100,c00100,2017,NY,2,Number of returns with adjusted gross income (AGI),1345780,19957
+N00200,n_nonzero,00200,E00200,2017,NY,2,Number of returns with salaries and wages,904070,19958
+N00300,n_nonzero,00300,E00300,2017,NY,2,Number of returns with taxable interest,207740,19959
+N00600,n_nonzero,00600,E00600,2017,NY,2,Number of returns with ordinary dividends,131670,19960
+N00650,n_nonzero,00650,E00650,2017,NY,2,Number of returns with qualified dividends,120080,19961
+N00700,n_nonzero,00700,E00700,2017,NY,2,Number of returns with state and local income tax refunds,9260,19962
+N00900,n_nonzero,00900,E00900,2017,NY,2,Number of returns with business or professional net income (less loss) [Schedule C],290970,19963
+N01400,n_nonzero,01400,E01400,2017,NY,2,Number of returns with taxable individual retirement arrangements distributions,52170,19964
+N01700,n_nonzero,01700,E01700,2017,NY,2,Number of returns with taxable pensions and annuities,117150,19965
+N02300,n_nonzero,02300,E02300,2017,NY,2,Number of returns with unemployment compensation,13140,19966
+N03150,n_nonzero,03150,E03150,2017,NY,2,Number of returns with IRA payments,2830,19967
+N03210,n_nonzero,03210,E03210,2017,NY,2,Number of returns with student loan interest deduction,24930,19968
+N03220,n_nonzero,03220,E03220,2017,NY,2,Number of returns with educator expenses,2030,19969
+N03230,n_nonzero,03230,E03230,2017,NY,2,Number of returns with tuition and fees deduction,14590,19970
+N03240,n_nonzero,03240,E03240,2017,NY,2,Returns with domestic production activities deduction,610,19971
+N03270,n_nonzero,03270,E03270,2017,NY,2,Number of returns with self-employment health insurance deduction,7190,19972
+N03300,n_nonzero,03300,E03300,2017,NY,2,Number of returns with self-employment retirement plans,440,19973
+N05800,n_nonzero,05800,c05800,2017,NY,2,Number of returns with income tax before credits,125420,19974
+N07240,n_nonzero,07240,E07240,2017,NY,2,Number of returns with retirement savings contribution credit,100,19975
+N07260,n_nonzero,07260,E07260,2017,NY,2,Number of returns with residential energy tax credit,30,19976
+N07300,n_nonzero,07300,E07300,2017,NY,2,Number of returns with foreign tax credit,8150,19977
+N09600,n_nonzero,09600,c09600,2017,NY,2,Number of returns with alternative minimum tax,70,19978
+N18500,n_nonzero,18500,E18500,2017,NY,2,Number of returns with real estate taxes,31280,19979
+N2,n_exempt,NA,XTOT,2017,NY,2,Number of exemptions,1272370,19980
+N26270,n_nonzero,26270,E26270,2017,NY,2,Number of returns with partnership/S-corp net income (less loss),19380,19981
+A00100,amount,00100,c00100,2017,NY,3,Adjusted gross income (AGI),34317550000,19982
+A00200,amount,00200,E00200,2017,NY,3,Salaries and wages amount,25567251000,19983
+A00300,amount,00300,E00300,2017,NY,3,Taxable interest amount,187128000,19984
+A00600,amount,00600,E00600,2017,NY,3,Ordinary dividends amount,380169000,19985
+A00650,amount,00650,E00650,2017,NY,3,Qualified dividends amount,247539000,19986
+A00700,amount,00700,E00700,2017,NY,3,State and local income tax refunds amount,25284000,19987
+A00900,amount,00900,E00900,2017,NY,3,Business or professional net income (less loss) amount [Schedule C],4213000000,19988
+A01400,amount,01400,E01400,2017,NY,3,Taxable individual retirement arrangements distributions amount,775617000,19989
+A01700,amount,01700,E01700,2017,NY,3,Taxable pensions and annuities amount,2861850000,19990
+A02300,amount,02300,E02300,2017,NY,3,Unemployment compensation amount,318154000,19991
+A03150,amount,03150,E03150,2017,NY,3,IRA payments amount,53337000,19992
+A03210,amount,03210,E03210,2017,NY,3,Student loan interest deduction amount,88801000,19993
+A03220,amount,03220,E03220,2017,NY,3,Educator expenses amount,2714000,19994
+A03230,amount,03230,E03230,2017,NY,3,Tuition and fees deduction amount,23892000,19995
+A03240,amount,03240,E03240,2017,NY,3,Domestic production activities deduction amount,6708000,19996
+A03270,amount,03270,E03270,2017,NY,3,Self-employment health insurance deduction amount,62624000,19997
+A03300,amount,03300,E03300,2017,NY,3,Self-employment retirement plans amount,10878000,19998
+A05800,amount,05800,c05800,2017,NY,3,Income tax before credits amount,849121000,19999
+A07240,amount,07240,E07240,2017,NY,3,Retirement savings contribution credit amount,19313000,20000
+A07260,amount,07260,E07260,2017,NY,3,Residential energy tax credit amount,701000,20001
+A07300,amount,07300,E07300,2017,NY,3,Foreign tax credit amount,1306000,20002
+A09600,amount,09600,c09600,2017,NY,3,Alternative minimum tax amount,1040000,20003
+A18500,amount,18500,E18500,2017,NY,3,Real estate taxes amount,591114000,20004
+A26270,amount,26270,E26270,2017,NY,3,Partnership/S-corp net income (less loss) amount,81255000,20005
+MARS1,n_returns,NA,MARS1,2017,NY,3,Number of single returns,1198920,20006
+MARS2,n_returns,NA,MARS2,2017,NY,3,Number of joint returns,323880,20007
+MARS3,n_returns,NA,MARS3,2017,NY,3,Number of married-separate returns,31450,20008
+MARS4,n_returns,NA,MARS4,2017,NY,3,Number of head of household returns,450950,20009
+N00100,n_nonzero,00100,c00100,2017,NY,3,Number of returns with adjusted gross income (AGI),2005200,20010
+N00200,n_nonzero,00200,E00200,2017,NY,3,Number of returns with salaries and wages,1560740,20011
+N00300,n_nonzero,00300,E00300,2017,NY,3,Number of returns with taxable interest,301630,20012
+N00600,n_nonzero,00600,E00600,2017,NY,3,Number of returns with ordinary dividends,170720,20013
+N00650,n_nonzero,00650,E00650,2017,NY,3,Number of returns with qualified dividends,154690,20014
+N00700,n_nonzero,00700,E00700,2017,NY,3,Number of returns with state and local income tax refunds,31290,20015
+N00900,n_nonzero,00900,E00900,2017,NY,3,Number of returns with business or professional net income (less loss) [Schedule C],393980,20016
+N01400,n_nonzero,01400,E01400,2017,NY,3,Number of returns with taxable individual retirement arrangements distributions,112730,20017
+N01700,n_nonzero,01700,E01700,2017,NY,3,Number of returns with taxable pensions and annuities,258080,20018
+N02300,n_nonzero,02300,E02300,2017,NY,3,Number of returns with unemployment compensation,69560,20019
+N03150,n_nonzero,03150,E03150,2017,NY,3,Number of returns with IRA payments,15440,20020
+N03210,n_nonzero,03210,E03210,2017,NY,3,Number of returns with student loan interest deduction,93160,20021
+N03220,n_nonzero,03220,E03220,2017,NY,3,Number of returns with educator expenses,11520,20022
+N03230,n_nonzero,03230,E03230,2017,NY,3,Number of returns with tuition and fees deduction,8480,20023
+N03240,n_nonzero,03240,E03240,2017,NY,3,Returns with domestic production activities deduction,1030,20024
+N03270,n_nonzero,03270,E03270,2017,NY,3,Number of returns with self-employment health insurance deduction,16790,20025
+N03300,n_nonzero,03300,E03300,2017,NY,3,Number of returns with self-employment retirement plans,1620,20026
+N05800,n_nonzero,05800,c05800,2017,NY,3,Number of returns with income tax before credits,1249440,20027
+N07240,n_nonzero,07240,E07240,2017,NY,3,Number of returns with retirement savings contribution credit,110140,20028
+N07260,n_nonzero,07260,E07260,2017,NY,3,Number of returns with residential energy tax credit,2330,20029
+N07300,n_nonzero,07300,E07300,2017,NY,3,Number of returns with foreign tax credit,19230,20030
+N09600,n_nonzero,09600,c09600,2017,NY,3,Number of returns with alternative minimum tax,330,20031
+N18500,n_nonzero,18500,E18500,2017,NY,3,Number of returns with real estate taxes,93090,20032
+N2,n_exempt,NA,XTOT,2017,NY,3,Number of exemptions,3375680,20033
+N26270,n_nonzero,26270,E26270,2017,NY,3,Number of returns with partnership/S-corp net income (less loss),40030,20034
+A00100,amount,00100,c00100,2017,NY,4,Adjusted gross income (AGI),78562853000,20035
+A00200,amount,00200,E00200,2017,NY,4,Salaries and wages amount,65312304000,20036
+A00300,amount,00300,E00300,2017,NY,4,Taxable interest amount,302417000,20037
+A00600,amount,00600,E00600,2017,NY,4,Ordinary dividends amount,668220000,20038
+A00650,amount,00650,E00650,2017,NY,4,Qualified dividends amount,458199000,20039
+A00700,amount,00700,E00700,2017,NY,4,State and local income tax refunds amount,112990000,20040
+A00900,amount,00900,E00900,2017,NY,4,Business or professional net income (less loss) amount [Schedule C],2832569000,20041
+A01400,amount,01400,E01400,2017,NY,4,Taxable individual retirement arrangements distributions amount,1406023000,20042
+A01700,amount,01700,E01700,2017,NY,4,Taxable pensions and annuities amount,5504451000,20043
+A02300,amount,02300,E02300,2017,NY,4,Unemployment compensation amount,437360000,20044
+A03150,amount,03150,E03150,2017,NY,4,IRA payments amount,177430000,20045
+A03210,amount,03210,E03210,2017,NY,4,Student loan interest deduction amount,279471000,20046
+A03220,amount,03220,E03220,2017,NY,4,Educator expenses amount,8473000,20047
+A03230,amount,03230,E03230,2017,NY,4,Tuition and fees deduction amount,23934000,20048
+A03240,amount,03240,E03240,2017,NY,4,Domestic production activities deduction amount,11750000,20049
+A03270,amount,03270,E03270,2017,NY,4,Self-employment health insurance deduction amount,137926000,20050
+A03300,amount,03300,E03300,2017,NY,4,Self-employment retirement plans amount,38660000,20051
+A05800,amount,05800,c05800,2017,NY,4,Income tax before credits amount,5212349000,20052
+A07240,amount,07240,E07240,2017,NY,4,Retirement savings contribution credit amount,44124000,20053
+A07260,amount,07260,E07260,2017,NY,4,Residential energy tax credit amount,6737000,20054
+A07300,amount,07300,E07300,2017,NY,4,Foreign tax credit amount,5654000,20055
+A09600,amount,09600,c09600,2017,NY,4,Alternative minimum tax amount,1833000,20056
+A18500,amount,18500,E18500,2017,NY,4,Real estate taxes amount,1544207000,20057
+A26270,amount,26270,E26270,2017,NY,4,Partnership/S-corp net income (less loss) amount,340707000,20058
+MARS1,n_returns,NA,MARS1,2017,NY,4,Number of single returns,1190480,20059
+MARS2,n_returns,NA,MARS2,2017,NY,4,Number of joint returns,436000,20060
+MARS3,n_returns,NA,MARS3,2017,NY,4,Number of married-separate returns,55210,20061
+MARS4,n_returns,NA,MARS4,2017,NY,4,Number of head of household returns,477470,20062
+N00100,n_nonzero,00100,c00100,2017,NY,4,Number of returns with adjusted gross income (AGI),2159160,20063
+N00200,n_nonzero,00200,E00200,2017,NY,4,Number of returns with salaries and wages,1893590,20064
+N00300,n_nonzero,00300,E00300,2017,NY,4,Number of returns with taxable interest,483390,20065
+N00600,n_nonzero,00600,E00600,2017,NY,4,Number of returns with ordinary dividends,250360,20066
+N00650,n_nonzero,00650,E00650,2017,NY,4,Number of returns with qualified dividends,229990,20067
+N00700,n_nonzero,00700,E00700,2017,NY,4,Number of returns with state and local income tax refunds,152160,20068
+N00900,n_nonzero,00900,E00900,2017,NY,4,Number of returns with business or professional net income (less loss) [Schedule C],259470,20069
+N01400,n_nonzero,01400,E01400,2017,NY,4,Number of returns with taxable individual retirement arrangements distributions,143790,20070
+N01700,n_nonzero,01700,E01700,2017,NY,4,Number of returns with taxable pensions and annuities,319050,20071
+N02300,n_nonzero,02300,E02300,2017,NY,4,Number of returns with unemployment compensation,82660,20072
+N03150,n_nonzero,03150,E03150,2017,NY,4,Number of returns with IRA payments,42750,20073
+N03210,n_nonzero,03210,E03210,2017,NY,4,Number of returns with student loan interest deduction,249560,20074
+N03220,n_nonzero,03220,E03220,2017,NY,4,Number of returns with educator expenses,34850,20075
+N03230,n_nonzero,03230,E03230,2017,NY,4,Number of returns with tuition and fees deduction,9630,20076
+N03240,n_nonzero,03240,E03240,2017,NY,4,Returns with domestic production activities deduction,1930,20077
+N03270,n_nonzero,03270,E03270,2017,NY,4,Number of returns with self-employment health insurance deduction,28040,20078
+N03300,n_nonzero,03300,E03300,2017,NY,4,Number of returns with self-employment retirement plans,4270,20079
+N05800,n_nonzero,05800,c05800,2017,NY,4,Number of returns with income tax before credits,2055710,20080
+N07240,n_nonzero,07240,E07240,2017,NY,4,Number of returns with retirement savings contribution credit,241620,20081
+N07260,n_nonzero,07260,E07260,2017,NY,4,Number of returns with residential energy tax credit,11750,20082
+N07300,n_nonzero,07300,E07300,2017,NY,4,Number of returns with foreign tax credit,52600,20083
+N09600,n_nonzero,09600,c09600,2017,NY,4,Number of returns with alternative minimum tax,450,20084
+N18500,n_nonzero,18500,E18500,2017,NY,4,Number of returns with real estate taxes,250390,20085
+N2,n_exempt,NA,XTOT,2017,NY,4,Number of exemptions,3800340,20086
+N26270,n_nonzero,26270,E26270,2017,NY,4,Number of returns with partnership/S-corp net income (less loss),62930,20087
+A00100,amount,00100,c00100,2017,NY,5,Adjusted gross income (AGI),81527861000,20088
+A00200,amount,00200,E00200,2017,NY,5,Salaries and wages amount,65054349000,20089
+A00300,amount,00300,E00300,2017,NY,5,Taxable interest amount,358480000,20090
+A00600,amount,00600,E00600,2017,NY,5,Ordinary dividends amount,884563000,20091
+A00650,amount,00650,E00650,2017,NY,5,Qualified dividends amount,623471000,20092
+A00700,amount,00700,E00700,2017,NY,5,State and local income tax refunds amount,228882000,20093
+A00900,amount,00900,E00900,2017,NY,5,Business or professional net income (less loss) amount [Schedule C],1800229000,20094
+A01400,amount,01400,E01400,2017,NY,5,Taxable individual retirement arrangements distributions amount,1770002000,20095
+A01700,amount,01700,E01700,2017,NY,5,Taxable pensions and annuities amount,6886537000,20096
+A02300,amount,02300,E02300,2017,NY,5,Unemployment compensation amount,228398000,20097
+A03150,amount,03150,E03150,2017,NY,5,IRA payments amount,180142000,20098
+A03210,amount,03210,E03210,2017,NY,5,Student loan interest deduction amount,238688000,20099
+A03220,amount,03220,E03220,2017,NY,5,Educator expenses amount,11498000,20100
+A03230,amount,03230,E03230,2017,NY,5,Tuition and fees deduction amount,33506000,20101
+A03240,amount,03240,E03240,2017,NY,5,Domestic production activities deduction amount,12407000,20102
+A03270,amount,03270,E03270,2017,NY,5,Self-employment health insurance deduction amount,146501000,20103
+A03300,amount,03300,E03300,2017,NY,5,Self-employment retirement plans amount,58608000,20104
+A05800,amount,05800,c05800,2017,NY,5,Income tax before credits amount,7970590000,20105
+A07240,amount,07240,E07240,2017,NY,5,Retirement savings contribution credit amount,9300000,20106
+A07260,amount,07260,E07260,2017,NY,5,Residential energy tax credit amount,13026000,20107
+A07300,amount,07300,E07300,2017,NY,5,Foreign tax credit amount,10531000,20108
+A09600,amount,09600,c09600,2017,NY,5,Alternative minimum tax amount,5707000,20109
+A18500,amount,18500,E18500,2017,NY,5,Real estate taxes amount,2228967000,20110
+A26270,amount,26270,E26270,2017,NY,5,Partnership/S-corp net income (less loss) amount,487203000,20111
+MARS1,n_returns,NA,MARS1,2017,NY,5,Number of single returns,673230,20112
+MARS2,n_returns,NA,MARS2,2017,NY,5,Number of joint returns,386460,20113
+MARS3,n_returns,NA,MARS3,2017,NY,5,Number of married-separate returns,42800,20114
+MARS4,n_returns,NA,MARS4,2017,NY,5,Number of head of household returns,223760,20115
+N00100,n_nonzero,00100,c00100,2017,NY,5,Number of returns with adjusted gross income (AGI),1326250,20116
+N00200,n_nonzero,00200,E00200,2017,NY,5,Number of returns with salaries and wages,1158770,20117
+N00300,n_nonzero,00300,E00300,2017,NY,5,Number of returns with taxable interest,499840,20118
+N00600,n_nonzero,00600,E00600,2017,NY,5,Number of returns with ordinary dividends,263130,20119
+N00650,n_nonzero,00650,E00650,2017,NY,5,Number of returns with qualified dividends,243880,20120
+N00700,n_nonzero,00700,E00700,2017,NY,5,Number of returns with state and local income tax refunds,263790,20121
+N00900,n_nonzero,00900,E00900,2017,NY,5,Number of returns with business or professional net income (less loss) [Schedule C],162460,20122
+N01400,n_nonzero,01400,E01400,2017,NY,5,Number of returns with taxable individual retirement arrangements distributions,134070,20123
+N01700,n_nonzero,01700,E01700,2017,NY,5,Number of returns with taxable pensions and annuities,278430,20124
+N02300,n_nonzero,02300,E02300,2017,NY,5,Number of returns with unemployment compensation,43400,20125
+N03150,n_nonzero,03150,E03150,2017,NY,5,Number of returns with IRA payments,38330,20126
+N03210,n_nonzero,03210,E03210,2017,NY,5,Number of returns with student loan interest deduction,204070,20127
+N03220,n_nonzero,03220,E03220,2017,NY,5,Number of returns with educator expenses,46530,20128
+N03230,n_nonzero,03230,E03230,2017,NY,5,Number of returns with tuition and fees deduction,15520,20129
+N03240,n_nonzero,03240,E03240,2017,NY,5,Returns with domestic production activities deduction,2140,20130
+N03270,n_nonzero,03270,E03270,2017,NY,5,Number of returns with self-employment health insurance deduction,22770,20131
+N03300,n_nonzero,03300,E03300,2017,NY,5,Number of returns with self-employment retirement plans,5110,20132
+N05800,n_nonzero,05800,c05800,2017,NY,5,Number of returns with income tax before credits,1313640,20133
+N07240,n_nonzero,07240,E07240,2017,NY,5,Number of returns with retirement savings contribution credit,53490,20134
+N07260,n_nonzero,07260,E07260,2017,NY,5,Number of returns with residential energy tax credit,14980,20135
+N07300,n_nonzero,07300,E07300,2017,NY,5,Number of returns with foreign tax credit,69150,20136
+N09600,n_nonzero,09600,c09600,2017,NY,5,Number of returns with alternative minimum tax,2170,20137
+N18500,n_nonzero,18500,E18500,2017,NY,5,Number of returns with real estate taxes,354710,20138
+N2,n_exempt,NA,XTOT,2017,NY,5,Number of exemptions,2385170,20139
+N26270,n_nonzero,26270,E26270,2017,NY,5,Number of returns with partnership/S-corp net income (less loss),58710,20140
+A00100,amount,00100,c00100,2017,NY,6,Adjusted gross income (AGI),73482730000,20141
+A00200,amount,00200,E00200,2017,NY,6,Salaries and wages amount,55967004000,20142
+A00300,amount,00300,E00300,2017,NY,6,Taxable interest amount,367317000,20143
+A00600,amount,00600,E00600,2017,NY,6,Ordinary dividends amount,966330000,20144
+A00650,amount,00650,E00650,2017,NY,6,Qualified dividends amount,701401000,20145
+A00700,amount,00700,E00700,2017,NY,6,State and local income tax refunds amount,282307000,20146
+A00900,amount,00900,E00900,2017,NY,6,Business or professional net income (less loss) amount [Schedule C],1581956000,20147
+A01400,amount,01400,E01400,2017,NY,6,Taxable individual retirement arrangements distributions amount,1940924000,20148
+A01700,amount,01700,E01700,2017,NY,6,Taxable pensions and annuities amount,7206825000,20149
+A02300,amount,02300,E02300,2017,NY,6,Unemployment compensation amount,142385000,20150
+A03150,amount,03150,E03150,2017,NY,6,IRA payments amount,140640000,20151
+A03210,amount,03210,E03210,2017,NY,6,Student loan interest deduction amount,87021000,20152
+A03220,amount,03220,E03220,2017,NY,6,Educator expenses amount,11514000,20153
+A03230,amount,03230,E03230,2017,NY,6,Tuition and fees deduction amount,7652000,20154
+A03240,amount,03240,E03240,2017,NY,6,Domestic production activities deduction amount,12389000,20155
+A03270,amount,03270,E03270,2017,NY,6,Self-employment health insurance deduction amount,139501000,20156
+A03300,amount,03300,E03300,2017,NY,6,Self-employment retirement plans amount,78355000,20157
+A05800,amount,05800,c05800,2017,NY,6,Income tax before credits amount,8269689000,20158
+A07240,amount,07240,E07240,2017,NY,6,Retirement savings contribution credit amount,0,20159
+A07260,amount,07260,E07260,2017,NY,6,Residential energy tax credit amount,15402000,20160
+A07300,amount,07300,E07300,2017,NY,6,Foreign tax credit amount,13650000,20161
+A09600,amount,09600,c09600,2017,NY,6,Alternative minimum tax amount,15056000,20162
+A18500,amount,18500,E18500,2017,NY,6,Real estate taxes amount,2514490000,20163
+A26270,amount,26270,E26270,2017,NY,6,Partnership/S-corp net income (less loss) amount,656348000,20164
+MARS1,n_returns,NA,MARS1,2017,NY,6,Number of single returns,330010,20165
+MARS2,n_returns,NA,MARS2,2017,NY,6,Number of joint returns,385850,20166
+MARS3,n_returns,NA,MARS3,2017,NY,6,Number of married-separate returns,26360,20167
+MARS4,n_returns,NA,MARS4,2017,NY,6,Number of head of household returns,105780,20168
+N00100,n_nonzero,00100,c00100,2017,NY,6,Number of returns with adjusted gross income (AGI),848000,20169
+N00200,n_nonzero,00200,E00200,2017,NY,6,Number of returns with salaries and wages,735030,20170
+N00300,n_nonzero,00300,E00300,2017,NY,6,Number of returns with taxable interest,437650,20171
+N00600,n_nonzero,00600,E00600,2017,NY,6,Number of returns with ordinary dividends,238780,20172
+N00650,n_nonzero,00650,E00650,2017,NY,6,Number of returns with qualified dividends,222540,20173
+N00700,n_nonzero,00700,E00700,2017,NY,6,Number of returns with state and local income tax refunds,280080,20174
+N00900,n_nonzero,00900,E00900,2017,NY,6,Number of returns with business or professional net income (less loss) [Schedule C],121110,20175
+N01400,n_nonzero,01400,E01400,2017,NY,6,Number of returns with taxable individual retirement arrangements distributions,115690,20176
+N01700,n_nonzero,01700,E01700,2017,NY,6,Number of returns with taxable pensions and annuities,223390,20177
+N02300,n_nonzero,02300,E02300,2017,NY,6,Number of returns with unemployment compensation,27600,20178
+N03150,n_nonzero,03150,E03150,2017,NY,6,Number of returns with IRA payments,24500,20179
+N03210,n_nonzero,03210,E03210,2017,NY,6,Number of returns with student loan interest deduction,82150,20180
+N03220,n_nonzero,03220,E03220,2017,NY,6,Number of returns with educator expenses,45420,20181
+N03230,n_nonzero,03230,E03230,2017,NY,6,Number of returns with tuition and fees deduction,3840,20182
+N03240,n_nonzero,03240,E03240,2017,NY,6,Returns with domestic production activities deduction,2070,20183
+N03270,n_nonzero,03270,E03270,2017,NY,6,Number of returns with self-employment health insurance deduction,18600,20184
+N03300,n_nonzero,03300,E03300,2017,NY,6,Number of returns with self-employment retirement plans,5830,20185
+N05800,n_nonzero,05800,c05800,2017,NY,6,Number of returns with income tax before credits,842830,20186
+N07240,n_nonzero,07240,E07240,2017,NY,6,Number of returns with retirement savings contribution credit,0,20187
+N07260,n_nonzero,07260,E07260,2017,NY,6,Number of returns with residential energy tax credit,13850,20188
+N07300,n_nonzero,07300,E07300,2017,NY,6,Number of returns with foreign tax credit,69890,20189
+N09600,n_nonzero,09600,c09600,2017,NY,6,Number of returns with alternative minimum tax,10510,20190
+N18500,n_nonzero,18500,E18500,2017,NY,6,Number of returns with real estate taxes,358730,20191
+N2,n_exempt,NA,XTOT,2017,NY,6,Number of exemptions,1713800,20192
+N26270,n_nonzero,26270,E26270,2017,NY,6,Number of returns with partnership/S-corp net income (less loss),55360,20193
+A00100,amount,00100,c00100,2017,NY,7,Adjusted gross income (AGI),179003932000,20194
+A00200,amount,00200,E00200,2017,NY,7,Salaries and wages amount,134967516000,20195
+A00300,amount,00300,E00300,2017,NY,7,Taxable interest amount,1007250000,20196
+A00600,amount,00600,E00600,2017,NY,7,Ordinary dividends amount,3075451000,20197
+A00650,amount,00650,E00650,2017,NY,7,Qualified dividends amount,2330008000,20198
+A00700,amount,00700,E00700,2017,NY,7,State and local income tax refunds amount,791304000,20199
+A00900,amount,00900,E00900,2017,NY,7,Business or professional net income (less loss) amount [Schedule C],4508425000,20200
+A01400,amount,01400,E01400,2017,NY,7,Taxable individual retirement arrangements distributions amount,5153632000,20201
+A01700,amount,01700,E01700,2017,NY,7,Taxable pensions and annuities amount,16323280000,20202
+A02300,amount,02300,E02300,2017,NY,7,Unemployment compensation amount,198662000,20203
+A03150,amount,03150,E03150,2017,NY,7,IRA payments amount,271551000,20204
+A03210,amount,03210,E03210,2017,NY,7,Student loan interest deduction amount,148625000,20205
+A03220,amount,03220,E03220,2017,NY,7,Educator expenses amount,30265000,20206
+A03230,amount,03230,E03230,2017,NY,7,Tuition and fees deduction amount,40689000,20207
+A03240,amount,03240,E03240,2017,NY,7,Domestic production activities deduction amount,36492000,20208
+A03270,amount,03270,E03270,2017,NY,7,Self-employment health insurance deduction amount,400035000,20209
+A03300,amount,03300,E03300,2017,NY,7,Self-employment retirement plans amount,377741000,20210
+A05800,amount,05800,c05800,2017,NY,7,Income tax before credits amount,23935283000,20211
+A07240,amount,07240,E07240,2017,NY,7,Retirement savings contribution credit amount,0,20212
+A07260,amount,07260,E07260,2017,NY,7,Residential energy tax credit amount,43528000,20213
+A07300,amount,07300,E07300,2017,NY,7,Foreign tax credit amount,62450000,20214
+A09600,amount,09600,c09600,2017,NY,7,Alternative minimum tax amount,271449000,20215
+A18500,amount,18500,E18500,2017,NY,7,Real estate taxes amount,7632511000,20216
+A26270,amount,26270,E26270,2017,NY,7,Partnership/S-corp net income (less loss) amount,3119764000,20217
+MARS1,n_returns,NA,MARS1,2017,NY,7,Number of single returns,329920,20218
+MARS2,n_returns,NA,MARS2,2017,NY,7,Number of joint returns,858250,20219
+MARS3,n_returns,NA,MARS3,2017,NY,7,Number of married-separate returns,27530,20220
+MARS4,n_returns,NA,MARS4,2017,NY,7,Number of head of household returns,93660,20221
+N00100,n_nonzero,00100,c00100,2017,NY,7,Number of returns with adjusted gross income (AGI),1309360,20222
+N00200,n_nonzero,00200,E00200,2017,NY,7,Number of returns with salaries and wages,1157870,20223
+N00300,n_nonzero,00300,E00300,2017,NY,7,Number of returns with taxable interest,869710,20224
+N00600,n_nonzero,00600,E00600,2017,NY,7,Number of returns with ordinary dividends,519700,20225
+N00650,n_nonzero,00650,E00650,2017,NY,7,Number of returns with qualified dividends,490800,20226
+N00700,n_nonzero,00700,E00700,2017,NY,7,Number of returns with state and local income tax refunds,597270,20227
+N00900,n_nonzero,00900,E00900,2017,NY,7,Number of returns with business or professional net income (less loss) [Schedule C],232560,20228
+N01400,n_nonzero,01400,E01400,2017,NY,7,Number of returns with taxable individual retirement arrangements distributions,209010,20229
+N01700,n_nonzero,01700,E01700,2017,NY,7,Number of returns with taxable pensions and annuities,367250,20230
+N02300,n_nonzero,02300,E02300,2017,NY,7,Number of returns with unemployment compensation,38350,20231
+N03150,n_nonzero,03150,E03150,2017,NY,7,Number of returns with IRA payments,46180,20232
+N03210,n_nonzero,03210,E03210,2017,NY,7,Number of returns with student loan interest deduction,126400,20233
+N03220,n_nonzero,03220,E03220,2017,NY,7,Number of returns with educator expenses,110670,20234
+N03230,n_nonzero,03230,E03230,2017,NY,7,Number of returns with tuition and fees deduction,21050,20235
+N03240,n_nonzero,03240,E03240,2017,NY,7,Returns with domestic production activities deduction,5910,20236
+N03270,n_nonzero,03270,E03270,2017,NY,7,Number of returns with self-employment health insurance deduction,42810,20237
+N03300,n_nonzero,03300,E03300,2017,NY,7,Number of returns with self-employment retirement plans,21660,20238
+N05800,n_nonzero,05800,c05800,2017,NY,7,Number of returns with income tax before credits,1304620,20239
+N07240,n_nonzero,07240,E07240,2017,NY,7,Number of returns with retirement savings contribution credit,0,20240
+N07260,n_nonzero,07260,E07260,2017,NY,7,Number of returns with residential energy tax credit,29220,20241
+N07300,n_nonzero,07300,E07300,2017,NY,7,Number of returns with foreign tax credit,176100,20242
+N09600,n_nonzero,09600,c09600,2017,NY,7,Number of returns with alternative minimum tax,117750,20243
+N18500,n_nonzero,18500,E18500,2017,NY,7,Number of returns with real estate taxes,861760,20244
+N2,n_exempt,NA,XTOT,2017,NY,7,Number of exemptions,3148060,20245
+N26270,n_nonzero,26270,E26270,2017,NY,7,Number of returns with partnership/S-corp net income (less loss),143290,20246
+A00100,amount,00100,c00100,2017,NY,8,Adjusted gross income (AGI),129588367000,20247
+A00200,amount,00200,E00200,2017,NY,8,Salaries and wages amount,92248432000,20248
+A00300,amount,00300,E00300,2017,NY,8,Taxable interest amount,1067258000,20249
+A00600,amount,00600,E00600,2017,NY,8,Ordinary dividends amount,3796718000,20250
+A00650,amount,00650,E00650,2017,NY,8,Qualified dividends amount,2978965000,20251
+A00700,amount,00700,E00700,2017,NY,8,State and local income tax refunds amount,526586000,20252
+A00900,amount,00900,E00900,2017,NY,8,Business or professional net income (less loss) amount [Schedule C],5505720000,20253
+A01400,amount,01400,E01400,2017,NY,8,Taxable individual retirement arrangements distributions amount,3518001000,20254
+A01700,amount,01700,E01700,2017,NY,8,Taxable pensions and annuities amount,6671409000,20255
+A02300,amount,02300,E02300,2017,NY,8,Unemployment compensation amount,47999000,20256
+A03150,amount,03150,E03150,2017,NY,8,IRA payments amount,85313000,20257
+A03210,amount,03210,E03210,2017,NY,8,Student loan interest deduction amount,0,20258
+A03220,amount,03220,E03220,2017,NY,8,Educator expenses amount,9667000,20259
+A03230,amount,03230,E03230,2017,NY,8,Tuition and fees deduction amount,0,20260
+A03240,amount,03240,E03240,2017,NY,8,Domestic production activities deduction amount,71134000,20261
+A03270,amount,03270,E03270,2017,NY,8,Self-employment health insurance deduction amount,487934000,20262
+A03300,amount,03300,E03300,2017,NY,8,Self-employment retirement plans amount,853283000,20263
+A05800,amount,05800,c05800,2017,NY,8,Income tax before credits amount,25685825000,20264
+A07240,amount,07240,E07240,2017,NY,8,Retirement savings contribution credit amount,0,20265
+A07260,amount,07260,E07260,2017,NY,8,Residential energy tax credit amount,19017000,20266
+A07300,amount,07300,E07300,2017,NY,8,Foreign tax credit amount,163565000,20267
+A09600,amount,09600,c09600,2017,NY,8,Alternative minimum tax amount,2537188000,20268
+A18500,amount,18500,E18500,2017,NY,8,Real estate taxes amount,4920125000,20269
+A26270,amount,26270,E26270,2017,NY,8,Partnership/S-corp net income (less loss) amount,7997236000,20270
+MARS1,n_returns,NA,MARS1,2017,NY,8,Number of single returns,81790,20271
+MARS2,n_returns,NA,MARS2,2017,NY,8,Number of joint returns,350390,20272
+MARS3,n_returns,NA,MARS3,2017,NY,8,Number of married-separate returns,6050,20273
+MARS4,n_returns,NA,MARS4,2017,NY,8,Number of head of household returns,13470,20274
+N00100,n_nonzero,00100,c00100,2017,NY,8,Number of returns with adjusted gross income (AGI),451700,20275
+N00200,n_nonzero,00200,E00200,2017,NY,8,Number of returns with salaries and wages,403520,20276
+N00300,n_nonzero,00300,E00300,2017,NY,8,Number of returns with taxable interest,370830,20277
+N00600,n_nonzero,00600,E00600,2017,NY,8,Number of returns with ordinary dividends,281010,20278
+N00650,n_nonzero,00650,E00650,2017,NY,8,Number of returns with qualified dividends,269920,20279
+N00700,n_nonzero,00700,E00700,2017,NY,8,Number of returns with state and local income tax refunds,175630,20280
+N00900,n_nonzero,00900,E00900,2017,NY,8,Number of returns with business or professional net income (less loss) [Schedule C],106420,20281
+N01400,n_nonzero,01400,E01400,2017,NY,8,Number of returns with taxable individual retirement arrangements distributions,80200,20282
+N01700,n_nonzero,01700,E01700,2017,NY,8,Number of returns with taxable pensions and annuities,105620,20283
+N02300,n_nonzero,02300,E02300,2017,NY,8,Number of returns with unemployment compensation,8220,20284
+N03150,n_nonzero,03150,E03150,2017,NY,8,Number of returns with IRA payments,9600,20285
+N03210,n_nonzero,03210,E03210,2017,NY,8,Number of returns with student loan interest deduction,0,20286
+N03220,n_nonzero,03220,E03220,2017,NY,8,Number of returns with educator expenses,34150,20287
+N03230,n_nonzero,03230,E03230,2017,NY,8,Number of returns with tuition and fees deduction,0,20288
+N03240,n_nonzero,03240,E03240,2017,NY,8,Returns with domestic production activities deduction,7040,20289
+N03270,n_nonzero,03270,E03270,2017,NY,8,Number of returns with self-employment health insurance deduction,36260,20290
+N03300,n_nonzero,03300,E03300,2017,NY,8,Number of returns with self-employment retirement plans,29310,20291
+N05800,n_nonzero,05800,c05800,2017,NY,8,Number of returns with income tax before credits,451050,20292
+N07240,n_nonzero,07240,E07240,2017,NY,8,Number of returns with retirement savings contribution credit,0,20293
+N07260,n_nonzero,07260,E07260,2017,NY,8,Number of returns with residential energy tax credit,9440,20294
+N07300,n_nonzero,07300,E07300,2017,NY,8,Number of returns with foreign tax credit,132700,20295
+N09600,n_nonzero,09600,c09600,2017,NY,8,Number of returns with alternative minimum tax,368400,20296
+N18500,n_nonzero,18500,E18500,2017,NY,8,Number of returns with real estate taxes,355610,20297
+N2,n_exempt,NA,XTOT,2017,NY,8,Number of exemptions,1215230,20298
+N26270,n_nonzero,26270,E26270,2017,NY,8,Number of returns with partnership/S-corp net income (less loss),117180,20299
+A00100,amount,00100,c00100,2017,NY,9,Adjusted gross income (AGI),56532599000,20300
+A00200,amount,00200,E00200,2017,NY,9,Salaries and wages amount,34332789000,20301
+A00300,amount,00300,E00300,2017,NY,9,Taxable interest amount,737488000,20302
+A00600,amount,00600,E00600,2017,NY,9,Ordinary dividends amount,2379979000,20303
+A00650,amount,00650,E00650,2017,NY,9,Qualified dividends amount,1872825000,20304
+A00700,amount,00700,E00700,2017,NY,9,State and local income tax refunds amount,379479000,20305
+A00900,amount,00900,E00900,2017,NY,9,Business or professional net income (less loss) amount [Schedule C],2711665000,20306
+A01400,amount,01400,E01400,2017,NY,9,Taxable individual retirement arrangements distributions amount,957621000,20307
+A01700,amount,01700,E01700,2017,NY,9,Taxable pensions and annuities amount,905255000,20308
+A02300,amount,02300,E02300,2017,NY,9,Unemployment compensation amount,4468000,20309
+A03150,amount,03150,E03150,2017,NY,9,IRA payments amount,17537000,20310
+A03210,amount,03210,E03210,2017,NY,9,Student loan interest deduction amount,0,20311
+A03220,amount,03220,E03220,2017,NY,9,Educator expenses amount,421000,20312
+A03230,amount,03230,E03230,2017,NY,9,Tuition and fees deduction amount,0,20313
+A03240,amount,03240,E03240,2017,NY,9,Domestic production activities deduction amount,74952000,20314
+A03270,amount,03270,E03270,2017,NY,9,Self-employment health insurance deduction amount,239452000,20315
+A03300,amount,03300,E03300,2017,NY,9,Self-employment retirement plans amount,570065000,20316
+A05800,amount,05800,c05800,2017,NY,9,Income tax before credits amount,14302720000,20317
+A07240,amount,07240,E07240,2017,NY,9,Retirement savings contribution credit amount,0,20318
+A07260,amount,07260,E07260,2017,NY,9,Residential energy tax credit amount,2842000,20319
+A07300,amount,07300,E07300,2017,NY,9,Foreign tax credit amount,185984000,20320
+A09600,amount,09600,c09600,2017,NY,9,Alternative minimum tax amount,916566000,20321
+A18500,amount,18500,E18500,2017,NY,9,Real estate taxes amount,1658013000,20322
+A26270,amount,26270,E26270,2017,NY,9,Partnership/S-corp net income (less loss) amount,8461338000,20323
+MARS1,n_returns,NA,MARS1,2017,NY,9,Number of single returns,12760,20324
+MARS2,n_returns,NA,MARS2,2017,NY,9,Number of joint returns,66790,20325
+MARS3,n_returns,NA,MARS3,2017,NY,9,Number of married-separate returns,1280,20326
+MARS4,n_returns,NA,MARS4,2017,NY,9,Number of head of household returns,2230,20327
+N00100,n_nonzero,00100,c00100,2017,NY,9,Number of returns with adjusted gross income (AGI),83060,20328
+N00200,n_nonzero,00200,E00200,2017,NY,9,Number of returns with salaries and wages,71870,20329
+N00300,n_nonzero,00300,E00300,2017,NY,9,Number of returns with taxable interest,77400,20330
+N00600,n_nonzero,00600,E00600,2017,NY,9,Number of returns with ordinary dividends,67840,20331
+N00650,n_nonzero,00650,E00650,2017,NY,9,Number of returns with qualified dividends,65800,20332
+N00700,n_nonzero,00700,E00700,2017,NY,9,Number of returns with state and local income tax refunds,35950,20333
+N00900,n_nonzero,00900,E00900,2017,NY,9,Number of returns with business or professional net income (less loss) [Schedule C],22340,20334
+N01400,n_nonzero,01400,E01400,2017,NY,9,Number of returns with taxable individual retirement arrangements distributions,14470,20335
+N01700,n_nonzero,01700,E01700,2017,NY,9,Number of returns with taxable pensions and annuities,13810,20336
+N02300,n_nonzero,02300,E02300,2017,NY,9,Number of returns with unemployment compensation,660,20337
+N03150,n_nonzero,03150,E03150,2017,NY,9,Number of returns with IRA payments,1810,20338
+N03210,n_nonzero,03210,E03210,2017,NY,9,Number of returns with student loan interest deduction,0,20339
+N03220,n_nonzero,03220,E03220,2017,NY,9,Number of returns with educator expenses,1660,20340
+N03230,n_nonzero,03230,E03230,2017,NY,9,Number of returns with tuition and fees deduction,0,20341
+N03240,n_nonzero,03240,E03240,2017,NY,9,Returns with domestic production activities deduction,3860,20342
+N03270,n_nonzero,03270,E03270,2017,NY,9,Number of returns with self-employment health insurance deduction,13680,20343
+N03300,n_nonzero,03300,E03300,2017,NY,9,Number of returns with self-employment retirement plans,11900,20344
+N05800,n_nonzero,05800,c05800,2017,NY,9,Number of returns with income tax before credits,83000,20345
+N07240,n_nonzero,07240,E07240,2017,NY,9,Number of returns with retirement savings contribution credit,0,20346
+N07260,n_nonzero,07260,E07260,2017,NY,9,Number of returns with residential energy tax credit,1130,20347
+N07300,n_nonzero,07300,E07300,2017,NY,9,Number of returns with foreign tax credit,42600,20348
+N09600,n_nonzero,09600,c09600,2017,NY,9,Number of returns with alternative minimum tax,56570,20349
+N18500,n_nonzero,18500,E18500,2017,NY,9,Number of returns with real estate taxes,69110,20350
+N2,n_exempt,NA,XTOT,2017,NY,9,Number of exemptions,235600,20351
+N26270,n_nonzero,26270,E26270,2017,NY,9,Number of returns with partnership/S-corp net income (less loss),43300,20352
+A00100,amount,00100,c00100,2017,NY,10,Adjusted gross income (AGI),220647586000,20353
+A00200,amount,00200,E00200,2017,NY,10,Salaries and wages amount,70057670000,20354
+A00300,amount,00300,E00300,2017,NY,10,Taxable interest amount,8579499000,20355
+A00600,amount,00600,E00600,2017,NY,10,Ordinary dividends amount,13323536000,20356
+A00650,amount,00650,E00650,2017,NY,10,Qualified dividends amount,9485267000,20357
+A00700,amount,00700,E00700,2017,NY,10,State and local income tax refunds amount,2000548000,20358
+A00900,amount,00900,E00900,2017,NY,10,Business or professional net income (less loss) amount [Schedule C],5524810000,20359
+A01400,amount,01400,E01400,2017,NY,10,Taxable individual retirement arrangements distributions amount,791240000,20360
+A01700,amount,01700,E01700,2017,NY,10,Taxable pensions and annuities amount,656538000,20361
+A02300,amount,02300,E02300,2017,NY,10,Unemployment compensation amount,1268000,20362
+A03150,amount,03150,E03150,2017,NY,10,IRA payments amount,11065000,20363
+A03210,amount,03210,E03210,2017,NY,10,Student loan interest deduction amount,0,20364
+A03220,amount,03220,E03220,2017,NY,10,Educator expenses amount,95000,20365
+A03230,amount,03230,E03230,2017,NY,10,Tuition and fees deduction amount,0,20366
+A03240,amount,03240,E03240,2017,NY,10,Domestic production activities deduction amount,418275000,20367
+A03270,amount,03270,E03270,2017,NY,10,Self-employment health insurance deduction amount,295748000,20368
+A03300,amount,03300,E03300,2017,NY,10,Self-employment retirement plans amount,728236000,20369
+A05800,amount,05800,c05800,2017,NY,10,Income tax before credits amount,59029662000,20370
+A07240,amount,07240,E07240,2017,NY,10,Retirement savings contribution credit amount,0,20371
+A07260,amount,07260,E07260,2017,NY,10,Residential energy tax credit amount,4345000,20372
+A07300,amount,07300,E07300,2017,NY,10,Foreign tax credit amount,1565000000,20373
+A09600,amount,09600,c09600,2017,NY,10,Alternative minimum tax amount,1621308000,20374
+A18500,amount,18500,E18500,2017,NY,10,Real estate taxes amount,2318530000,20375
+A26270,amount,26270,E26270,2017,NY,10,Partnership/S-corp net income (less loss) amount,44812765000,20376
+MARS1,n_returns,NA,MARS1,2017,NY,10,Number of single returns,7360,20377
+MARS2,n_returns,NA,MARS2,2017,NY,10,Number of joint returns,43450,20378
+MARS3,n_returns,NA,MARS3,2017,NY,10,Number of married-separate returns,1300,20379
+MARS4,n_returns,NA,MARS4,2017,NY,10,Number of head of household returns,1370,20380
+N00100,n_nonzero,00100,c00100,2017,NY,10,Number of returns with adjusted gross income (AGI),53480,20381
+N00200,n_nonzero,00200,E00200,2017,NY,10,Number of returns with salaries and wages,43240,20382
+N00300,n_nonzero,00300,E00300,2017,NY,10,Number of returns with taxable interest,52360,20383
+N00600,n_nonzero,00600,E00600,2017,NY,10,Number of returns with ordinary dividends,48570,20384
+N00650,n_nonzero,00650,E00650,2017,NY,10,Number of returns with qualified dividends,47440,20385
+N00700,n_nonzero,00700,E00700,2017,NY,10,Number of returns with state and local income tax refunds,35720,20386
+N00900,n_nonzero,00900,E00900,2017,NY,10,Number of returns with business or professional net income (less loss) [Schedule C],13470,20387
+N01400,n_nonzero,01400,E01400,2017,NY,10,Number of returns with taxable individual retirement arrangements distributions,8540,20388
+N01700,n_nonzero,01700,E01700,2017,NY,10,Number of returns with taxable pensions and annuities,7870,20389
+N02300,n_nonzero,02300,E02300,2017,NY,10,Number of returns with unemployment compensation,180,20390
+N03150,n_nonzero,03150,E03150,2017,NY,10,Number of returns with IRA payments,1110,20391
+N03210,n_nonzero,03210,E03210,2017,NY,10,Number of returns with student loan interest deduction,0,20392
+N03220,n_nonzero,03220,E03220,2017,NY,10,Number of returns with educator expenses,380,20393
+N03230,n_nonzero,03230,E03230,2017,NY,10,Number of returns with tuition and fees deduction,0,20394
+N03240,n_nonzero,03240,E03240,2017,NY,10,Returns with domestic production activities deduction,6420,20395
+N03270,n_nonzero,03270,E03270,2017,NY,10,Number of returns with self-employment health insurance deduction,13290,20396
+N03300,n_nonzero,03300,E03300,2017,NY,10,Number of returns with self-employment retirement plans,10410,20397
+N05800,n_nonzero,05800,c05800,2017,NY,10,Number of returns with income tax before credits,53460,20398
+N07240,n_nonzero,07240,E07240,2017,NY,10,Number of returns with retirement savings contribution credit,0,20399
+N07260,n_nonzero,07260,E07260,2017,NY,10,Number of returns with residential energy tax credit,450,20400
+N07300,n_nonzero,07300,E07300,2017,NY,10,Number of returns with foreign tax credit,37170,20401
+N09600,n_nonzero,09600,c09600,2017,NY,10,Number of returns with alternative minimum tax,12830,20402
+N18500,n_nonzero,18500,E18500,2017,NY,10,Number of returns with real estate taxes,47440,20403
+N2,n_exempt,NA,XTOT,2017,NY,10,Number of exemptions,157750,20404
+N26270,n_nonzero,26270,E26270,2017,NY,10,Number of returns with partnership/S-corp net income (less loss),40400,20405

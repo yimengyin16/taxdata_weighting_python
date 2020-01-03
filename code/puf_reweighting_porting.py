@@ -282,7 +282,7 @@ def runstub(AGI_STUB, tolerances, nzcc, pufbase_state, log_dir, interim_results_
     # NOTE!!: create i and j, each of which will be consecutive integersm where
         #   i gives the index for constraints
         #   j gives the index for the RECID (for the variables)
-        #   TODO: There should be better ways to do this in python (liek grouop_indeces in R)
+        #   TODO: There should be better ways to do this in python (like grouop_indeces in R)
         #   Note that the indeces start from 0 here in python. (start from 1 in R)
     #nzcc_stub
     nzcc_stub['i'] = nzcc_stub.constraint_name
@@ -341,7 +341,8 @@ def runstub(AGI_STUB, tolerances, nzcc, pufbase_state, log_dir, interim_results_
 
     nlp_puf.addOption('print_level', 0)
     nlp_puf.addOption('file_print_level', 5)
-    # nlp_puf.addOption('linear_solver', 'ma27') # cyipopt uses MUMPS solver as its default solver
+    # nlp_puf.addOption('linear_solver', 'ma27') # cyipopt uses MUMPS solver as its default solver 
+    # TODO: Try other solvers
     nlp_puf.addOption('max_iter', 100)
     nlp_puf.addOption('mu_strategy', 'adaptive')
     nlp_puf.addOption('output_file', logfile_name)
